@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./users.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <title>User Section</title>
+  </head>
+  <body>
+      <!----- Navbar Opens Here ----->
+      <div id="navbar">
+          <div id="nav-logo">
+              <img src="https://technext.github.io/material_able/assets/images/logo.png" alt="" id="logo">
+          </div>
+      </div>
+      <!----- Navbar Closed Closed ----->
+
+ <!----- Main Opens Here------->
+      <div id="main">
+
+           <!----- Sidebar Open----->
+         <div id="main-left">
+              <div id="profile-div">
+                   <img src="https://technext.github.io/material_able/assets/images/avatar-4.jpg" alt="" id="pro-pic">    
+              </div>
+              <div id="input-div">
+                   <input type="text" id="input" placeholder="Search People">
+              </div>
+              <div id="dash-div">
+                <div id="dash-icon">
+                  <i class="bi bi-person-workspace"></i>
+                </div>
+                <div id="dash-text">
+                    <p class="text"><a href="">Users</a></p>
+                </div>     
+              </div>
+              <div id="dash-div">
+                <div id="dash-icon">
+                  <i class="bi bi-person-workspace"></i>
+                </div>
+                <div id="dash-text">
+                    <p class="text"><a href="employee.html">Employee</a></p>
+                </div>     
+              </div>
+         </div>
+           <!------- Sidebar Closed Here ----->
+
+         
+         <!-------- Main Right Section Opens Here ----->
+         <div id="main-right">
+              <!-------- Header Section Opens Here ----->
+               <div id="header">
+                  <div id="inside-first-header">
+                    <div id="inside-header-1">
+                        <h5 id="h5-1">Dashboard</h5>
+                    </div>
+                    <div id="inside-header-2">
+                      <p id="p1">Welcome to Material Able</p>
+                    </div>
+                  </div>
+                  <div id="inside-second-header">
+                    <div id="h-icon-1">
+                      <i class="bi bi-house-door-fill"></i>
+                    </div>
+                    <div id="h-txt">
+                      <p class="text">Dashboard</p>
+                    </div>
+                  </div>
+               </div>
+               <!-------- Header Section Closed Here ----->
+
+               <!--------- Create User Section Opens Here ----->
+                 <div id="create-user-emp">
+                    <div id="create-user">
+                       <div id="create-users">
+                         <h3 id="user-txt">Create User</h3>
+                       </div>
+                       <div id="user-form">
+                         <form id="form">
+                           <input type="text" class="user-field" id="full-name" placeholder="Full Name" required>
+                           <input type="text" class="user-field" id="catagory" placeholder="Catagory      [A - B - C]" required>
+                           <select name="" class="user-field" id="country_code" required>
+                             <option value="">Country Code</option>
+                             <option value="Ind">India    (+91)</option>
+                           </select>
+                           <input type="tel" class="user-field" id="m-num" placeholder="Mobile No." required>
+                           <input type="text" class="user-field" id="state" placeholder="State" required>
+                           <input type="text" class="user-field", id="country" placeholder="Country" required>
+                            <input type="text" class="user-field" id="username" placeholder="User Name" required>
+                            <input type="email" class="user-field" id="email" placeholder="Email"
+                            required>
+                            <input type="password" class="user-field" id="pass" placeholder="Password" required>
+                            <input type="submit" class="user-field" id="add-user-btn" value="Add User">
+                         </form>
+                       </div>
+                    </div>
+                 </div>
+               <!--------- Create User Section Closed Here ----->
+          <div id="user-list">
+              <div id="user-head">
+                <i class="bi bi-people-fill" id="user-icon"></i>
+                 <h3>Users</h3>
+              </div>
+              <div id="user-table-box">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Username</th>
+                      <th>Email</th>
+                      <th>Mobile No</th>
+                      <th>Catagory</th>
+                      <th>State</th>
+                      <th>Country</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+          </div>
+          <div id="footer">
+
+          </div>
+           <!-------- Main Right Section Closed Here ----->
+         </div>
+      </div>
+ <!---- Main Section Closed Here ------->
+
+    
+
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./users.js"></script>
+  </body>
+</html>

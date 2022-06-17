@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./employee.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <title>Employee Section</title>
+  </head>
+  <body>
+    <!----- Navbar Opens Here ----->
+    <div id="navbar">
+      <div id="nav-logo">
+        <img
+          src="https://technext.github.io/material_able/assets/images/logo.png"
+          alt=""
+          id="logo"
+        />
+      </div>
+    </div>
+    <!----- Navbar Closed Closed ----->
+
+    <!----- Main Section Opens Here ----->
+    <div id="main">
+      <!----- Sidebar Section Opens Here ----->
+      <div id="main-left">
+        <div id="profile-div">
+          <img
+            src="https://technext.github.io/material_able/assets/images/avatar-4.jpg"
+            alt=""
+            id="pro-pic"
+          />
+        </div>
+        <div id="input-div">
+          <input type="text" id="input" placeholder="Search People" />
+        </div>
+        <div id="dash-div">
+          <div id="dash-icon">
+            <i class="bi bi-person-workspace"></i>
+          </div>
+          <div id="dash-text">
+            <p class="text"><a href="users.html">Users</a></p>
+          </div>
+        </div>
+        <div id="dash-div">
+          <div id="dash-icon">
+            <i class="bi bi-person-workspace"></i>
+          </div>
+          <div id="dash-text">
+            <p class="text"><a href="employee.html">Employee</a></p>
+          </div>
+        </div>
+      </div>
+      <!----- Sidebar Section Closed Here ----->
+
+      <!----- Right Section Opens Here ----->
+      <div id="main-right">
+        <!-------- Header Section Opens Here ----->
+        <div id="header">
+          <div id="inside-first-header">
+            <div id="inside-header-1">
+              <h5 id="h5-1">Dashboard</h5>
+            </div>
+            <div id="inside-header-2">
+              <p id="p1">Welcome to Material Able</p>
+            </div>
+          </div>
+          <div id="inside-second-header">
+            <div id="h-icon-1">
+              <i class="bi bi-house-door-fill"></i>
+            </div>
+            <div id="h-txt">
+              <p class="text">Dashboard</p>
+            </div>
+          </div>
+        </div>
+        <!-------- Header Section Closed Here ----->
+
+        <!------ Create Employee Section Opens Here ------->
+        <div id="create-emp-box">
+             <div id="emp-title">
+                 <div id="emp-title-box">
+                    <h3 id="create-emp">Create Employee</h3>
+                 </div>
+             </div>
+             <div id="emp-form">
+                 <form action="" id="form">
+                  <input type="text" id="name" placeholder="Full Name" required>
+                  <input type="tel" id="mobile" placeholder="Mobile No." required>
+                  <input type="email" id="email" placeholder="Email" required>
+                  <input type="text" id="state" placeholder="State" required>
+                  <input type="text" id="country" placeholder="Country" required>
+                  <input type="date" id="dob" placeholder="Date Of Birth" required>
+                  <input type="text" id="qualification" placeholder="Qualification" required>
+                  <select name="" id="select-catagory">
+                    <option value="">Select Catagory</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                  </select>
+                  <select name="" id="select-experience">
+                    <option value="">Select Experience</option>
+                    <option value="1 year">Less than 1 year</option>
+                    <option value="1-5 year">1 - 5 years</option>
+                    <option value="5+ year">More than 5 years</option>
+                  </select>
+                  <input type="text" id="username" placeholder="Username">
+                  <input type="password" id="pass" placeholder="Password">
+                  <input type="submit" id="submit" value="Add Employee">
+                 </form>
+             </div>
+        </div>
+        <!-------- Create Employee Section Closed Here ----->
+        <div id="emp-list">
+           <div id="user-head">
+            <h3>Employees</h3>
+           </div>
+           <div id="emp-table-box">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Mobile No</th>
+                    <th>Catagory</th>
+                    <th>State</th>
+                    <th>Country</th>
+                    <th>Delete</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+           </div>
+        </div>
+      </div>
+      <!----- Right Section Closed Here ----->
+    </div>
+    <!----- Main Section Closed Here ----->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./employee.js"></script>
+  </body>
+</html>

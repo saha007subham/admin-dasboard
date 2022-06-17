@@ -1,0 +1,310 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* -------- Navbar CSS --------- */
+
+#navbar {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(68,138,255);
+    position: fixed;
+}
+
+#nav-logo {
+    width: 15%;
+    margin-left: 15px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------- Main Div ------------ */
+
+#main {
+    width: 100%;
+    height: 700px;
+    display: flex;
+}
+
+/* --------- SideBar ------------ */
+
+#main-left {
+    width: 20%;
+}
+
+#profile-div {
+    width: 100%;
+    height: 15%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(54,93,157);
+}
+
+#pro-pic {
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+}
+
+#input-div {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: space-around;
+    display: flex;
+    align-items: last baseline;
+    padding-left: 20px;
+}
+
+#input {
+    border: none;
+    width: 90%;
+    border-bottom: 1px solid gray;
+    outline: 0px;
+}
+
+#dash-div {
+    width: 90%;
+    height: 45px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+
+#dash-div:hover {
+    cursor: pointer;
+    background-color: rgb(68,138,255);
+    color: white;
+}
+
+#dash-icon {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dash-text {
+    display: flex;
+    width: 75%;
+    height: 100%;
+    padding-top: 10px
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+    background-color: rgb(68,138,255);
+    color: white;
+}
+
+.text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+/* --------- Right Sidebar -------- */ 
+
+#main-right {
+    width: 80%;
+}
+
+#header {
+    height: 165px;
+    width: 100%;
+    background-color: rgb(68,111,178);
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ------ First Left Header ------- */
+
+#inside-first-header {
+    width: 25%;
+    margin-top: 6%;
+}
+
+#inside-header-1 {
+    height: 40px;
+    width: 80%;
+    margin-top: 13px;
+    padding-top: 10px;
+}
+
+#inside-header-2 {
+    height: 40px;
+}
+
+#p1 {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#h5-1 {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+/* ------- Second Right Header -------- */
+
+#inside-second-header {
+    width: 25%;
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#h-icon-1 {
+    color: white;
+    width: 10%;
+}
+
+#h-icon-1:hover {
+    cursor: pointer;
+}
+
+#h-txt {
+    width: 35%;
+    padding-top: 15px;
+    color: white;
+}
+
+#h-txt:hover {
+    cursor: pointer;
+}
+
+/* ------- Create User Section ------ */
+
+#create-user-emp {
+    height: 530px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#create-user {
+    width: 43%;
+    height: 100%;
+
+}
+
+#create-emp {
+    width: 43%;
+    height: 100%;
+}
+
+#create-users {
+    border-bottom: 3px solid cornflowerblue;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+#user-txt {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#user-form {
+    width: 100%;
+    height: 75%;
+    margin-top: 20px;
+}
+
+#form {
+    height: 100%;
+    display: grid;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.user-field {
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+
+#add-user-btn {
+    margin-top: 30px;
+}
+
+#add-user-btn:hover {
+    background-color: rgb(68,111,178);
+    color: white;
+}
+
+#user-list {
+    height: 500px;
+    margin-bottom: 5%;
+}
+
+#user-head {
+    border: 1px solid cornflowerblue;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: cornflowerblue;
+    color: white;
+    margin-left: 42%;
+}
+
+#user-icon {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+#user-table-box {
+    margin-top: 10px;
+    height: 90%;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  table td,
+  table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #a8d380;
+  }
+
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(68,111,178);
+    color: white;
+    text-align: center;
+  }
+
+  #footer {
+      border: 1px solid blue;
+  }
